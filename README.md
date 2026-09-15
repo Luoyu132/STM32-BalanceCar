@@ -167,6 +167,12 @@ if(roll < -30 || roll > 30) {   // 判定摔倒
 
 ## 快速开始
 
+```bash
+git clone https://github.com/Luoyu132/STM32-BalanceCar.git
+```
+
+> 仓库仅包含源码与工程文件，**不含编译产物**（`OBJ/` 目录会在首次编译后自动生成）。
+
 ### 1. 准备环境
 
 - **Keil MDK 5**，并安装 **ARM Compiler 5**（本工程未启用 AC6，需在 Keil 中装 Legacy 支持包）
