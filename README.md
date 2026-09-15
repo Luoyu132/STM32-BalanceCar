@@ -295,7 +295,6 @@ float zhongzhi = 0;                    // roll 理论值（小车平衡时的机
 
 | 组成部分 | 来源 / 版权 |
 |---|---|
-| 应用层、电机、OLED、PID 等自写代码 | 原作者 **WangGuanNan**（QQ：1501451224），创建于 2021/7/11，版本 V1.0「仅平衡」 |
 | `HARDWARE/MPU6050/`（含 `mpuiic`、`mpu6050` 的移植与引脚宏） | 参考 **正点原子 ALIENTEK**（www.openedv.com），版权归广州市星翼电子科技有限公司所有 |
 | `HARDWARE/MPU6050/eMPL/` | **InvenSense** 官方 eMPL 运动驱动库，版权归 InvenSense 所有 |
 | `STM32F10x_FWLib/`、`CORE/`、`USER/stm32f10x*.c/h` | **STMicroelectronics** 标准外设库 V3.5.0 与 CMSIS，遵循 ST 原始许可条款 |
