@@ -1,0 +1,33 @@
+# ---------------------------------------------------------------------------
+# 换行符策略：原样存储，禁止任何转换
+# ---------------------------------------------------------------------------
+# 本工程为 Keil MDK 项目，全部源文件为 CRLF + GBK 编码。
+# 若启用 Git 的自动换行符转换（系统级 core.autocrlf=true），
+# 提交时会把 CRLF 改写成 LF，导致 Keil 工程文件、.bat 脚本与
+# GBK 中文注释文件在不同平台间出现不一致。
+# 这里统一声明为不做文本转换，保证 checkout 后字节与本地完全一致。
+# ---------------------------------------------------------------------------
+* -text
+
+# Keil 工程与脚本保持 CRLF
+*.uvprojx  -text
+*.uvoptx   -text
+*.bat      -text
+
+# C 源码 / 头文件 / 启动文件（GBK 编码，禁止转换）
+*.c        -text
+*.h        -text
+*.s        -text
+
+# 二进制与文档
+*.hex      binary
+*.axf      binary
+*.bin      binary
+*.png      binary
+*.jpg      binary
+*.pdf      binary
+
+# GitHub 语言统计：把第三方库排除在主语言之外
+STM32F10x_FWLib/*  linguist-vendored
+CORE/*             linguist-vendored
+HARDWARE/MPU6050/eMPL/*  linguist-vendored
